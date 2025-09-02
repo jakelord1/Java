@@ -11,6 +11,26 @@ package ua.itstep.hw1;
 public class HW1 {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        int[][] Matrix = {
+            {1, 2},
+            {3, 4}
+        };
+        int[] Vector = {5, 6};
+        int[] Result = new int[Matrix.length];
+        
+        for (int ii = 0; ii < Matrix.length; ii++) {
+            int Summ = 0;
+            for (int jj = 0; jj < Matrix[ii].length; jj++) {
+                Summ += Matrix[ii][jj] * Vector[jj];
+            }
+            Result[ii] = Summ;
+        }
+        for (int k = 0; k < Result.length; k++) {
+            System.out.print(Result[k]);
+            if (k < Result.length - 1) {
+                System.out.print(", ");
+            }
+        }
+        System.out.println();
     }
 }
