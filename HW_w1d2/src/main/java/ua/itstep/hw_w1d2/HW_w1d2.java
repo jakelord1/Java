@@ -1,0 +1,16 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ */
+
+package ua.itstep.hw_w1d2;
+
+/**
+ *
+ * @author pronc
+ */
+public class HW_w1d2 {
+
+    public static void main(String[] args) {
+        new Threading().demo();
+    }
+}
