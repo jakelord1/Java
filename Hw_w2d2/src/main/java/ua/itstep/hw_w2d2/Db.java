@@ -22,8 +22,8 @@ import java.util.Map;
 import java.util.Objects;
 import java.util.Random;
 import java.util.Scanner;
-import ua.itstep.data.DAO.RandomItemDao;
-import ua.itstep.data.DTO.random_item;
+import ua.itstep.hw_w2d2.data.DAO.RandomItemDao;
+import ua.itstep.hw_w2d2.data.DTO.random_item;
 /**
  *
  * @author pronc
@@ -114,6 +114,7 @@ public class Db {
 
         System.out.println("Connection Ok");
         insertDao(connection);
+        
         queries(connection);
         try {
             connection.close();
