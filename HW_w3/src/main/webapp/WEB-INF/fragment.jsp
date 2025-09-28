@@ -1,11 +1,8 @@
-<%-- 
-    Document   : fragment
-    Created on : 16 сент. 2025 г., 10:38:20
-    Author     : pronc
---%>
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<h4>This is the fragment</h4>
-<p>
-    Fragment's key = <%= request.getParameter("key") %>
-</p>
+<div class="card border-0 shadow-sm">
+    <div class="card-body">
+        <h5 class="card-title mb-2">Фрагмент сторінки</h5>
+        <p class="card-text mb-1">Ключ фрагмента:</p>
+        <span class="badge bg-secondary"><%= request.getParameter("key") %></span>
+    </div>
+</div>

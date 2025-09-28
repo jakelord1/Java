@@ -8,15 +8,6 @@
     </head>
     <body>
         <jsp:include page="WEB-INF/header.jsp"/>
-        <jsp:include page="WEB-INF/footer.jsp"/>
-        <div class="card mt-4">
-                <div class="card-body">
-                    <h5 class="card-title">Додаткова інформація</h5>
-                    <p class="card-text">Поточний час сервера: 
-                        <%= new java.util.Date() %>
-                    </p>
-                </div>
-            </div>
         <div class="container py-4">
             <%
                 String userName = (String) request.getAttribute("userName");
@@ -41,7 +32,7 @@
                 }
             %>
         </div>
-        
+        <jsp:include page="WEB-INF/footer.jsp"/>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     </body>
 </html>

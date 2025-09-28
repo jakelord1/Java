@@ -5,6 +5,8 @@
 package ua.itstep.hw_w3.ioc;
 
 import com.google.inject.AbstractModule;
+import ua.itstep.hw_w3.services.config.ConfigService;
+import ua.itstep.hw_w3.services.config.JsonConfigService;
 import ua.itstep.hw_w3.services.hash.HashService;
 import ua.itstep.hw_w3.services.hash.Md5HashService;
 import ua.itstep.hw_w3.services.kdf.KdfService;
@@ -18,5 +20,7 @@ public class ServicesConfig extends AbstractModule {
         bind(KdfService.class).to(PbKdf1Service.class);
         bind(HashService.class).to(Md5HashService.class);
         bind(TimestampService.class).to(UnixSecondsTimestampService.class);
+        bind(ConfigService.class).to(JsonConfigService.class)
+                        .asEagerSingleton();
     }
 }

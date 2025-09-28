@@ -4,10 +4,6 @@
  */
 package ua.itstep.hw_w3.services.kdf;
 
-/**
- *
- * @author pronc
- */
 import com.google.inject.Inject;
 import ua.itstep.hw_w3.services.hash.HashService;
 
